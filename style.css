@@ -3,6 +3,17 @@ body {
     padding-left: 20px;
 }
 
+.wrapper {
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 input {
     margin-top: 20px;
     margin-right: 10px;
