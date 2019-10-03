@@ -14,22 +14,30 @@ body {
     align-items: center;
 }
 
+.line1 {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line2 {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .big {
-    position: absolute;
     height: 40px;
-    top: 45px;
-    right: 0;
 }
 
 .small {
-    position: absolute;
     height: 40px;
-    top: 120px;
-    right: 0;
 }
 
 input {
-    margin-top: 20px;
+
     margin-right: 10px;
     height: 20px;
     width: 100px;
