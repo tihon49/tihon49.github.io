@@ -35,7 +35,7 @@ function getTotalPrice() {
 
 button.addEventListener('click', function() {
     getTotalPrice();
-    out.textContent = totalPrice + ' руб.';
+    out.textContent = totalPrice.toFixed() + ' руб.';
     name1.style.boxShadow = '0 0 20px red';
     out.style.boxShadow = '0 0 20px red';
     liters2.style.boxShadow = '0 0 20px red';
