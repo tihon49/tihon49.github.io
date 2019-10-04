@@ -37,7 +37,6 @@ liters2.addEventListener('change', function() {
 //функция расчета
 function getTotalPrice() {
     totalPrice = sum1 * litersSum2 / litersSum1;
-    console.log(totalPrice);
     return totalPrice;
 }
 
@@ -77,7 +76,7 @@ clearBtn.addEventListener('click', function() {
 });
 
 
-//кнопка "сбросить"
+//кнопка "че за ...?"
 qwestionBtn.addEventListener('click', function() {
     overlay.style.display = 'block';
 });
