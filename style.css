@@ -4,7 +4,7 @@ body {
 }
 
 .wrapper {
-    height: 350px;
+    height: 375px;
     width: 300px;
     position: absolute;
     left: 50%;
@@ -26,6 +26,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.line3 {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    margin-top: 20px;
 }
 
 .big {

@@ -4,6 +4,7 @@ let name1  = document.querySelectorAll('input')[0],
     liters2 = document.querySelectorAll('input')[3],
     out    = document.querySelector('.out'),
     button = document.querySelector('button'),
+    clearBtn = document.querySelector('.clear'),
 
     sum1 = 0,
     sum2 = 0,
@@ -39,4 +40,15 @@ button.addEventListener('click', function() {
     name1.style.boxShadow = '0 0 20px red';
     out.style.boxShadow = '0 0 20px red';
     liters2.style.boxShadow = '0 0 20px red';
+});
+
+clearBtn.addEventListener('click', function() {
+    name1.value = '';
+    name2.value = '';
+    liters1.value = '';
+    liters2.value = '';
+    out.textContent = '...';
+    name1.style.boxShadow = '0 0 10px rgb(218, 233, 6)';
+    liters2.style.boxShadow = '0 0 10px rgb(218, 233, 6)';
+    out.style.boxShadow = '0 0 10px rgb(218, 233, 6)';
 });
