@@ -29,7 +29,7 @@ body {
 }
 
 .line3 {
-    height: 60px;
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
