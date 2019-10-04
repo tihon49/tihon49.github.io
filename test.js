@@ -5,6 +5,9 @@ let name1  = document.querySelectorAll('input')[0],
     out    = document.querySelector('.out'),
     button = document.querySelector('button'),
     clearBtn = document.querySelector('.clear'),
+    overlay = document.querySelector('.overlay'),
+    overlayBtn = document.querySelector('.overlayBtn'),
+    qwestionBtn = document.querySelector('.qwestion'),
 
     sum1 = 0,
     sum2 = 0,
@@ -51,4 +54,12 @@ clearBtn.addEventListener('click', function() {
     name1.style.boxShadow = '0 0 10px rgb(218, 233, 6)';
     liters2.style.boxShadow = '0 0 10px rgb(218, 233, 6)';
     out.style.boxShadow = '0 0 10px rgb(218, 233, 6)';
+});
+
+qwestionBtn.addEventListener('click', function() {
+    overlay.style.display = 'block';
+});
+
+overlayBtn.addEventListener('click', function() {
+    overlay.style.display = 'none';
 });
