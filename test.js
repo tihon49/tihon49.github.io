@@ -39,10 +39,15 @@ function getTotalPrice() {
 
 button.addEventListener('click', function() {
     getTotalPrice();
-    out.textContent = totalPrice.toFixed() + ' руб.';
-    name1.style.boxShadow = '0 0 20px red';
-    out.style.boxShadow = '0 0 20px red';
-    liters2.style.boxShadow = '0 0 20px red';
+    if (isNaN(totalPrice)) {
+        out.style.fontSize = '20px';
+        out.textContent = 'не верные данные...';
+    } else {
+        out.textContent = totalPrice.toFixed() + ' руб.';
+        name1.style.boxShadow = '0 0 20px red';
+        out.style.boxShadow = '0 0 20px red';
+        liters2.style.boxShadow = '0 0 20px red';
+    }
 });
 
 clearBtn.addEventListener('click', function() {
