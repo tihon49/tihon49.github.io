@@ -7,6 +7,8 @@ let price1  = document.querySelectorAll('input')[0],    //цена 1
     clearBtn = document.querySelector('.clear'),        //кнопка "сбросить"
     overlay = document.querySelector('.overlay'),       //оверлэй
     overlayBtn = document.querySelector('.overlayBtn'), //кнопка "я все понял"
+    stupedBtn = document.querySelector('.stuped'),
+    wrapper2 = document.querySelector('.wrapper2'),
     qwestionBtn = document.querySelector('.qwestion'),  //кнопка "че за...?"
     count = 0,                                          //счетчик
 
@@ -87,10 +89,16 @@ clearBtn.addEventListener('click', function() {
 //кнопка "че за ...?"
 qwestionBtn.addEventListener('click', function() {
     overlay.style.display = 'block';
+    wrapper2.style.height = '500px';
 });
 
 
 //кнопка "я все понял"
 overlayBtn.addEventListener('click', function() {
     overlay.style.display = 'none';
+    stupedBtn.style.display = '';
+});
+
+stupedBtn.addEventListener('click', () => {
+    stupedBtn.style.display = 'none';
 });

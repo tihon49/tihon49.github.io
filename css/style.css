@@ -13,7 +13,7 @@ body {
 
 .overlay_title {
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 23px;
     font-weight: 700;
     margin-right: 20px;
@@ -30,9 +30,9 @@ body {
     font-family: sans-serif;
 }
 
-.overlayBtn {
+.overlayBtn, .stuped {
     margin-right: 7px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .wrapper {
