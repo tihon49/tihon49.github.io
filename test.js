@@ -14,7 +14,9 @@ let price1  = document.querySelectorAll('input')[0],    //цена 1
     sum2 = 0,                                           //значение из цены 2
     litersSum1 = 0,                             
     litersSum2 = 0,
-    totalPrice = 0;
+    totalPrice = 0,
+    big_botle = document.querySelector('.big'),
+    small_botle = document.querySelector('.small');
 
 //получаем значения из полей
 price1.addEventListener('change', function() {
@@ -50,9 +52,14 @@ button.addEventListener('click', function() {
         count++;
     } else {
         out.textContent = totalPrice.toFixed() + ' руб.';
-        price1.style.boxShadow = '0 0 20px red';
-        out.style.boxShadow = '0 0 20px red';
-        liters2.style.boxShadow = '0 0 20px red';
+        if (totalPrice < sum2) {
+            price1.style.boxShadow = '0 0 20px red';
+            out.style.boxShadow = '0 0 20px red';
+            liters2.style.boxShadow = '0 0 20px red';
+        } else {
+            price2.style.boxShadow = '0 0 20px red';
+            liters2.style.boxShadow = '0 0 20px red';
+        }
     }
 
     if (count > 3) {
@@ -71,6 +78,7 @@ clearBtn.addEventListener('click', function() {
     liters2.value = '';
     out.textContent = '...';
     price1.style.boxShadow = '0 0 10px rgb(218, 233, 6)';
+    price2.style.boxShadow = '0 0 10px rgb(218, 233, 6)';
     liters2.style.boxShadow = '0 0 10px rgb(218, 233, 6)';
     out.style.boxShadow = '0 0 10px rgb(218, 233, 6)';
 });
